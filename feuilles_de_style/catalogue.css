@@ -1,0 +1,31 @@
+.boutons_filtre_tri {
+    height: 3em;
+}
+
+.bordure_droite{
+    border-right: solid 2px;
+}
+
+.row_icons i{
+    font-size: 1.5em;
+}
+
+.aligner_centre {
+    text-align: center;
+}
+
+header i {
+    font-size: 1.5em;
+}
+
+.retour_haut {
+    width: 2em;
+    text-align: center;
+    border: solid 2px;
+    font-size: 2em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: #090446;
+    background-color: #5C95FF;
+}
