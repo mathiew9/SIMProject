@@ -1,5 +1,6 @@
 .boutons_filtre_tri {
-    height: 3em;
+    height: 2.5em;
+    font-size: 20px;
 }
 
 .bordure_droite{
@@ -15,17 +16,118 @@
 }
 
 header i {
-    font-size: 1.5em;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
+
+.barre_recherche {
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#input_recherche {
+    border: none;
+}
+
+/* .logo {
+    width: 30%;
+} */
 
 .retour_haut {
     width: 2em;
     text-align: center;
     border: solid 2px;
+    border-radius: 10px;
     font-size: 2em;
     position: fixed;
     bottom: 1em;
     right: 1em;
     color: #090446;
     background-color: #5C95FF;
+    transition: transform .15s;
+    will-change: transform;
+}
+
+.retour_haut:hover {
+    transform: translateY(-4px);
+    color: #5C95FF;
+    background-color: #090446;
+}
+
+.retour_haut:active {
+    color: #090446;
+    background-color: #5C95FF;
+    transform: translateY(4px);
+}
+
+.scroll_down {
+    display: none;
+}
+
+.menuburger {
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.curseur_pointeur {
+    cursor:pointer;
+}
+
+.filtreflou {
+    filter: blur(4px);
+}
+
+.menuburger a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    text-align: left;
+  }
+
+  .menuburger i {
+    font-size: 2em;
+  }
+
+  .icon_burger_rotate{
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+
+.nbr_articles{
+    color: #090446;
+    font-size: 20px;
+}
+
+*{
+    font-family: opensans;
+}
+
+.btn_ajout_panier {
+    background-color: #090446;
+    color: white;
+    border-color: #5C95FF;
+}
+
+.description {
+    color: #5C95FF;
+}
+
+.card-title {
+    color: #090446;
 }

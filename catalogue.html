@@ -4,41 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportGlobes</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/catalogue.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./feuilles_de_style/catalogue.css">
 </head>
 <body>
-    <header class="row" id="header">
-        <i class="col-1 bi bi-text-paragraph"></i>
-        <img class="col-6 border" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
-        <i class="col-1 bi bi-person"></i>
-        <i class="col-1 bi bi-heart"></i>
-        <i class="col-1 bi bi-cart2"></i>
+    <div id="monMenuBurger" class="menuburger">
+        <div class="row mb-4 mx-2">
+            <a href="javascript:void(0)" onclick="fermerBurger()">
+                <i class="bi bi-text-paragraph icon_burger_rotate"></i>
+            </a>
+        </div>
+        <div class="row">
+            <img class="col-10 offset-1 mb-4" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
+        </div>
+        <div class="row align-items-center">
+            <i class="bi bi-house offset-1 col-2"></i>
+            <a href="#" class="col-9">Page d'accueil</a>
+        </div>
+        <div class="row align-items-center mt-4">
+            <i class="bi bi-person offset-1 col-2"></i>
+            <a href="#" class="col-9">Mon compte</a>
+        </div>
+        <div class="row align-items-center mt-4">
+            <i class="bi bi-cart2 offset-1 col-2"></i>
+            <a href="#" class="col-9"> Mon panier</a>
+        </div>
+        <div class="row align-items-center mt-4">
+            <i class="bi bi-handbag offset-1 col-2"></i>
+            <a href="#" class="col-9">Mes achats</a>
+        </div>
+        <div class="row align-items-center mt-4">
+            <i class="bi bi-heart offset-1 col-2"></i>
+            <a href="#" class="col-9">mes favoris</a>
+        </div>
+        <div class="row align-items-center mt-4">
+            <i class="bi bi-gear offset-1 col-2"></i>
+            <a href="#" class="col-9">Paramètres</a>
+        </div>
+    </div>
+
+    <header class="row aligner_centre" id="header">
+        <img class="col-6 col-md-2 logo" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
+        <i class="offset-md-4 col-2 border bi bi-person"></i>
+        <i class="col-2 border bi bi-heart"></i>
+        <i class="col-2 border bi bi-cart2"></i>
     </header>
-    <hr>
-    <div class="row row_icons">
-        <div class="col-2 col-md-1 bordure_droite aligner_centre">
+    <div class="row row_icons barre_recherche">
+        <div class="col-2 col-md-1 bordure_droite aligner_centre curseur_pointeur" onclick="ouvrirBurger()">
             <i class="bi bi-text-paragraph"></i>
         </div>
         <div class="col-10">
             <div class="row aligner_centre">
-                <i class="bi bi-search col-2 col-md-1 "></i>
-                <input type="text" class="col-9 col-md-11" placeholder="Rechercher un produit..">
+                <i class="bi bi-search col-2 col-md-1"></i>
+                <input type="text" class="col-9 col-md-11" id="input_recherche" placeholder="Rechercher un produit..">
             </div>
         </div>
 
     </div>
-    <hr>
     <div class="row align-items-center mx-1">
             <button class="col-6 col-md-2 offset-md-8 boutons_filtre_tri">Trier<i class="bi bi-arrow-down-up ms-1"></i></button>
             <button class="col-6 col-md-2 boutons_filtre_tri">Filtrer<i class="bi bi-funnel ms-1"></i></button> 
     </div>
 
+    <div class="row aligner_centre nbr_articles mt-3 mb-3">
+       <div class="col-12">45 articles trouvés</div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-4">
+        <div class="card col">
+            <img class="card-img-top" src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Ballon de foot</h5>
+            <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+            </div>
+        </div>
+        <div class="card col">
+            <img class="card-img-top" src="https://picsum.photos/seed/picsum/200/300" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+            </div>
+        </div>
+    </div>
+
     <hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>
-    
-    <a href="#header" class="retour_haut">
+
+    <a href="#header" class="retour_haut scroll_down">
         <i class="bi bi-chevron-up"></i>
     </a>
 </body>
