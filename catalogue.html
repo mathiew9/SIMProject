@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./feuilles_de_style/catalogue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="monMenuBurger" class="menuburger">
@@ -21,79 +24,125 @@
         <div class="row">
             <img class="col-10 offset-1 mb-4" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center burger_categories">
             <i class="bi bi-house offset-1 col-2"></i>
             <a href="#" class="col-9">Page d'accueil</a>
         </div>
-        <div class="row align-items-center mt-4">
+        <div class="row align-items-center burger_categories mt-4">
             <i class="bi bi-person offset-1 col-2"></i>
             <a href="#" class="col-9">Mon compte</a>
         </div>
-        <div class="row align-items-center mt-4">
+        <div class="row align-items-center burger_categories mt-4">
             <i class="bi bi-cart2 offset-1 col-2"></i>
             <a href="#" class="col-9"> Mon panier</a>
         </div>
-        <div class="row align-items-center mt-4">
+        <div class="row align-items-center burger_categories mt-4">
             <i class="bi bi-handbag offset-1 col-2"></i>
             <a href="#" class="col-9">Mes achats</a>
         </div>
-        <div class="row align-items-center mt-4">
+        <div class="row align-items-center burger_categories mt-4">
             <i class="bi bi-heart offset-1 col-2"></i>
-            <a href="#" class="col-9">mes favoris</a>
+            <a href="#" class="col-9">Mes favoris</a>
         </div>
-        <div class="row align-items-center mt-4">
+        <div class="row align-items-center burger_categories mt-4">
             <i class="bi bi-gear offset-1 col-2"></i>
             <a href="#" class="col-9">Paramètres</a>
         </div>
     </div>
 
-    <header class="row aligner_centre" id="header">
-        <img class="col-6 col-md-2 logo" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
-        <i class="offset-md-4 col-2 border bi bi-person"></i>
-        <i class="col-2 border bi bi-heart"></i>
-        <i class="col-2 border bi bi-cart2"></i>
-    </header>
-    <div class="row row_icons barre_recherche">
-        <div class="col-2 col-md-1 bordure_droite aligner_centre curseur_pointeur" onclick="ouvrirBurger()">
-            <i class="bi bi-text-paragraph"></i>
+    <div class="container-fluid">
+        <header class="row aligner_centre" id="header">
+            <img class="col-6 col-md-2 logo" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
+            <i class="offset-md-7 col-2 col-md-1 bi bi-person"></i>
+            <i class="col-2 col-md-1 bi bi-heart"></i>
+            <i class="col-2 col-md-1 bi bi-cart2"></i>
+        </header>
+        <div class="row row_icons barre_recherche">
+            <div class="col-2 col-md-1 bordure_droite aligner_centre curseur_pointeur" onclick="ouvrirBurger()">
+                <i class="bi bi-text-paragraph"></i>
+            </div>
+            <div class="col-10">
+                <div class="row aligner_centre">
+                    <i class="bi bi-search col-2 col-md-1"></i>
+                    <input type="text" class="col-9 col-md-11" id="input_recherche" placeholder="Rechercher un produit..">
+                </div>
+            </div>
+
         </div>
-        <div class="col-10">
-            <div class="row aligner_centre">
-                <i class="bi bi-search col-2 col-md-1"></i>
-                <input type="text" class="col-9 col-md-11" id="input_recherche" placeholder="Rechercher un produit..">
+        <div class="row align-items-center">
+                <button class="col-6 col-md-2 offset-md-8 boutons_filtre_tri">Trier<i class="bi bi-arrow-down-up ms-1"></i></button>
+                <button class="col-6 col-md-2 boutons_filtre_tri">Filtrer<i class="bi bi-funnel ms-1"></i></button> 
+        </div>
+
+        <div class="row aligner_centre nbr_articles mt-3 mb-3">
+        <div class="col-12">45 articles trouvés</div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4">
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris"></i>
+                    <img class="card-img-top" src="https://balloncoupedumonde2014.files.wordpress.com/2014/05/ballon-coupe-du-monde-2006-replica.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <span class="prix_produit">$22</span>
+                        <h5 class="card-title">Ballon de foot</h5>
+                        <p class="card-text description">Ballon de la coupe du monde de football 2006.</p>
+                        <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris"></i>
+                    <img class="card-img-top" src="https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <span class="prix_produit">$39</span>
+                        <h5 class="titre_carte">Ballon de basket</h5>
+                        <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris"></i>
+                    <img class="card-img-top" src="https://www.ballonbasket.fr/images/produits/zoom/ballon-basket-molten-bg2010-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <span class="prix_produit">$19</span>
+                        <h5 class="titre_carte">Ballon de basket</h5>
+                        <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+                    </div>
+                </div>
+        </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris" title="Ajouter aux favoris"></i>
+                    <img class="card-img-top" src="https://balloncoupedumonde2014.files.wordpress.com/2014/05/ballon-coupe-du-monde-2006-replica.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <span class="prix_produit">$22</span>
+                        <h5 class="card-title">Ballon de foot</h5>
+                        <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris"></i>
+                    <img class="card-img-top" src="https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <span class="prix_produit">$25</span>
+                        <h5 class="titre_carte">Ballon de basket</h5>
+                        <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-    <div class="row align-items-center mx-1">
-            <button class="col-6 col-md-2 offset-md-8 boutons_filtre_tri">Trier<i class="bi bi-arrow-down-up ms-1"></i></button>
-            <button class="col-6 col-md-2 boutons_filtre_tri">Filtrer<i class="bi bi-funnel ms-1"></i></button> 
-    </div>
-
-    <div class="row aligner_centre nbr_articles mt-3 mb-3">
-       <div class="col-12">45 articles trouvés</div>
-    </div>
-
-    <div class="row row-cols-2 row-cols-md-4">
-        <div class="card col">
-            <img class="card-img-top" src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="Card image cap">
-            <div class="card-body">
-            <h5 class="card-title">Ballon de foot</h5>
-            <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
-            </div>
-        </div>
-        <div class="card col">
-            <img class="card-img-top" src="https://picsum.photos/seed/picsum/200/300" alt="Card image cap">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary btn_ajout_panier">Ajouter au panier</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>a<hr>
+    
+    <br><br><br><br><br><br>
 
     <a href="#header" class="retour_haut scroll_down">
         <i class="bi bi-chevron-up"></i>

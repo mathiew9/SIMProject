@@ -1,6 +1,12 @@
 .boutons_filtre_tri {
     height: 2.5em;
     font-size: 20px;
+    background-color: white;
+}
+
+.boutons_filtre_tri:hover {
+    background-color: #090446;
+    color: white;
 }
 
 .bordure_droite{
@@ -34,10 +40,6 @@ header i {
 #input_recherche {
     border: none;
 }
-
-/* .logo {
-    width: 30%;
-} */
 
 .retour_haut {
     width: 2em;
@@ -84,6 +86,10 @@ header i {
     transition: 0.5s;
 }
 
+.burger_categories:hover, .burger_categories>a:hover {
+    color:#5C95FF;
+}
+
 .curseur_pointeur {
     cursor:pointer;
 }
@@ -92,22 +98,31 @@ header i {
     filter: blur(4px);
 }
 
+
+/*-----------Menu Burger------------*/
 .menuburger a {
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
     text-align: left;
-  }
+}
 
-  .menuburger i {
+.menuburger i {
     font-size: 2em;
-  }
+}
 
-  .icon_burger_rotate{
+.menuburger {
+    border-right: solid 1px;
+    border-color: #090446;
+}
+
+.icon_burger_rotate{
     transform: rotate(90deg);
     display: inline-block;
-  }
+    margin-top: -50px;
+}
+/*...........Menu Burger.............*/
 
 .nbr_articles{
     color: #090446;
@@ -115,7 +130,7 @@ header i {
 }
 
 *{
-    font-family: opensans;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn_ajout_panier {
@@ -130,4 +145,36 @@ header i {
 
 .card-title {
     color: #090446;
+}
+
+.prix_produit {
+    float:right;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.card-img-top{
+    width: 75%;
+    height: 75%;
+    margin-top: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ajouter_favoris {
+    position: absolute;
+    top:5px;
+    right: 10px;
+    font-size: 2em;
+    width: 2em;
+    text-align: right;
+}
+
+.ajouter_favoris:hover {
+    color:red;
 }
