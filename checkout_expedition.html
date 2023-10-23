@@ -4,24 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejoignez SportGlobes</title>
+    <link rel="stylesheet" href="checkout_expedition.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="16x16.png" type="image/png" sizes="16x16">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form action="" method="get" class="form-example">
-        <div class="form-example">
-          <label for="nom">Nom de famille: </label>
-          <input type="text" name="nom" id="nom" required />
-        </div>
-        <div class="form-example">
-          <label for="prenom">Prénom: </label>
-          <input type="text" name="prenom" id="prenom" required />
-        </div>
-        <div class="form-example">
-          <input type="submit" value="Subscribe!" />
-        </div>
-      </form>
+  <div class="container">
+    <div class="row row-cols-3">
+      <div class="col"></div>
+      <div class="col">
+      <img src="logosg.png" alt="SportGlobes Logo" />
+      <h1 style="color: #090446;">Entrez les détails d'expédition</h1>
+        <form action="" method="get" class="form">
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom de famille*</label>
+            <input type="text" class="form-control" id="nom" minlenght="2" placeholder="Entrez le nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Prénom*</label>
+            <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Entrez le prénom" minlenght="2" required />
+          </div>
+          <div class="mb-3">
+            <label for="tel" class="form-label" >Numéro de téléphone*</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>+33</option>
+              <option value="1">+01</option>
+              <option value="2">+02</option>
+              <option value="3">+03</option>
+            </select>
+            <input type="tel" class="form-control" name="tel" id="tel" placeholder="00 00 00 00 00" size="10"/>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Adresse Postale*</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Entrez l'adresse postale" required />
+          </div>
+          <div class="mb-3">
+            <label for="postcode" class="form-label">Code postal*</label>
+            <input type="number" class="form-control" name="postcode" id="postcode" placeholder="Entrez le code postal" required />
+          </div> 
+          <div class="mb-3">
+            <label for="country" class="form-label">Pays*</label>
+            <input type="text" class="form-control" name="country" id="country" placeholder="Entrez le pays" required />
+          </div>
+          <p>Champs obligatoires*</p>
+          <div class="btn">
+            <button class="btn btn-primary" type="submit">Passer au paiement</button>
+          </div>
+</form>
+      </div>
+      <div class="col"></div>
+
+    </div>
+  </div>
+
 </body>
 </html>
