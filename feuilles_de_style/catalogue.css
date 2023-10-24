@@ -1,16 +1,19 @@
 .boutons_filtre_tri {
-    height: 2.5em;
-    font-size: 20px;
+    height: 2em;
+    font-size: 15px;
     background-color: white;
+    border-width: 1px;
 }
 
 .boutons_filtre_tri:hover {
     background-color: #090446;
     color: white;
+    transform: scale(0.9);
+    transition: transform .15s;
 }
 
 .bordure_droite{
-    border-right: solid 2px;
+    border-right: solid 1px;
 }
 
 .row_icons i{
@@ -19,6 +22,15 @@
 
 .aligner_centre {
     text-align: center;
+}
+
+#bouton_tri{
+    border-radius: 10px 0% 0% 10px;
+    /* border-right: 0; */
+}
+
+#bouton_filtre{
+    border-radius: 0% 10px 10px 0%;
 }
 
 header i {
@@ -30,8 +42,8 @@ header i {
 }
 
 .barre_recherche {
-    border-top: solid 2px;
-    border-bottom: solid 2px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
