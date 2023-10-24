@@ -1,0 +1,44 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+header .container_pipeline {
+  display: flex;
+  justify-content: justify-center;
+  /* a */
+}
+
+header .container .bouton_retour {
+  width: 20%;
+  font-size: 2rem;
+}
+.bouton_retour:hover {
+  cursor: pointer;
+  color: rgb(7, 63, 133);
+}
+
+header .container #logo img {
+  width: 20%;
+  margin-left: 20%;
+  /* flex: center; */
+}
+
+#line_2 {
+  margin-top: 2rem;
+}
+
+.icon_step i {
+  margin: 1rem;
+  font-size: 2rem;
+}
+h3 {
+  font-weight: 600;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: 12rem;
+  display: flex;
+}
