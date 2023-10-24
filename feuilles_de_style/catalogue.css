@@ -149,21 +149,20 @@ header i {
 
 .prix_produit {
     float:right;
+    display: inline;
     font-weight:bold;
     font-size: 20px;
 }
 
 .card-img-top{
     width: 75%;
-    height: 75%;
     margin-top: 10px;
 }
 
-.card {
+.card_image {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .ajouter_favoris {
@@ -177,4 +176,5 @@ header i {
 
 .ajouter_favoris:hover {
     color:red;
+    cursor: pointer;
 }

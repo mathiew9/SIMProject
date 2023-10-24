@@ -1,7 +1,81 @@
 {
-    "titre": "Ballon de foot",
-    "description": "Ballon de la coupe du monde 2006",
-    "prix": "22",
-    "categorie": "football",
-    "image": "https://balloncoupedumonde2014.files.wordpress.com/2014/05/ballon-coupe-du-monde-2006-replica.jpg"
+    "produits": [
+        {
+            "titre": "Ballon de foot",
+            "description": "Ballon de la coupe du monde 2006",
+            "prix": "22.99",
+            "categorie": "football",
+            "image": "https://balloncoupedumonde2014.files.wordpress.com/2014/05/ballon-coupe-du-monde-2006-replica.jpg"
+        },
+        {
+            "titre": "Ballon de basket",
+            "description": "Simple ballon de basket",
+            "prix": "29.99",
+            "categorie": "basketball",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Ballon de basket",
+            "description": "Simple ballon de basket",
+            "prix": "29.99",
+            "categorie": "basketball",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Balle de tennis",
+            "description": "Simple ballon de tennis",
+            "prix": "4.99",
+            "categorie": "tennis",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Balle de handball",
+            "description": "Simple ballon de handball",
+            "prix": "15.99",
+            "categorie": "handball",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Ballon de football",
+            "description": "Simple ballon de football",
+            "prix": "19.99",
+            "categorie": "football",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Ballon de basket",
+            "description": "Beau ballon de basket",
+            "prix": "39.99",
+            "categorie": "basketball",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Balle de tennis",
+            "description": "Simple ballon de basket",
+            "prix": "29.99",
+            "categorie": "basketball",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Ballon de football",
+            "description": "Simple ballon de football",
+            "prix": "29.99",
+            "categorie": "football",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Balle de gym",
+            "description": "Grosse balle de gym",
+            "prix": "49.99",
+            "categorie": "gym",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        },
+        {
+            "titre": "Ballon de rugby",
+            "description": "Simple ballon de rugby",
+            "prix": "29.99",
+            "categorie": "rugby",
+            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+        }
+    ]
 }
