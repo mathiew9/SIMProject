@@ -19,42 +19,42 @@
             "description": "Simple ballon de basket",
             "prix": "29.99",
             "categorie": "basketball",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://sportlandamerican.com/50456-large_default/ballon-de-basketball-wilson-nba-player-giannis.jpg"
         },
         {
             "titre": "Balle de tennis",
             "description": "Simple ballon de tennis",
             "prix": "4.99",
             "categorie": "tennis",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://www.ojm-diffusion.com/61246-large_default/balle-de-tennis-publicitaire-geante-.webp"
         },
         {
             "titre": "Balle de handball",
             "description": "Simple ballon de handball",
             "prix": "15.99",
             "categorie": "handball",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://www.vente-privee-sports.com/46194/ballon-handball-taille-3-ultimate-lnh-starligue-t3-saison-2023-2024-select.jpg"
         },
         {
             "titre": "Ballon de football",
             "description": "Simple ballon de football",
             "prix": "19.99",
             "categorie": "football",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://www.ekinsport.com/media/catalog/product/d/n/dn3599-102_ballon-de-foot-academy-pour-unisexe-dn3599-102_01.jpg"
         },
         {
             "titre": "Ballon de basket",
             "description": "Beau ballon de basket",
             "prix": "39.99",
             "categorie": "basketball",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://contents.mediadecathlon.com/p2154421/k$1c4bb46d855d4303ac9a44f4f00b2d92/sq/250x250/Ballons-de-basket.jpg"
         },
         {
             "titre": "Balle de tennis",
-            "description": "Simple ballon de basket",
-            "prix": "29.99",
-            "categorie": "basketball",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "description": "Petite balle de tennis",
+            "prix": "5.99",
+            "categorie": "tennis",
+            "image": "https://fft-fft-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/de4306259fdd25d50a80812fb165ca17c28a8a89_WGDU0220_JAU_1.jpeg"
         },
         {
             "titre": "Ballon de football",
@@ -68,14 +68,14 @@
             "description": "Grosse balle de gym",
             "prix": "49.99",
             "categorie": "gym",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://media.intersport.fr/is/image/intersportfr/145063_ADQ_FA?$produit_l$&$product_grey$"
         },
         {
             "titre": "Ballon de rugby",
             "description": "Simple ballon de rugby",
             "prix": "29.99",
             "categorie": "rugby",
-            "image": "https://www.ballonbasket.fr/images/produits/zoom/ballon-de-basket-nba-wilson-drv-pro-outdoor.jpg"
+            "image": "https://m.media-amazon.com/images/I/91NtjHyeC3L.jpg"
         }
     ]
 }
