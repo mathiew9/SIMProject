@@ -190,3 +190,20 @@ header i {
     color:red;
     cursor: pointer;
 }
+
+#footer_row{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: lightgray;
+    font-size: smaller;
+}
+
+#footer_row>*{
+    margin-bottom: 1em;
+}
+
+.liens_footer:hover{
+    color: #5C95FF;
+    cursor: pointer;
+}
