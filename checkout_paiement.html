@@ -27,10 +27,10 @@
 
   <body>
     <header>
-        <div class="container mb-5">
+        <div class="container-fluid mb-5 bg-light">
             <div class="row">
-              <div class="col-3">
-                <div class="bouton_retour">
+              <div class="col-3 ">
+                <div id="bouton_retour">
                     <i class="bi bi-arrow-left-circle-fill"></i>
                   </div>
               </div>
@@ -75,8 +75,8 @@
         </div>
         <div class="card m-2 shadow-lg p-1 mb-5 bg-white rounded">
           <div class="card_moyens_paiement">
-            <div class="container-fluid px-md-2 px-lg-4 py-5 mx-auto">
-              <div class="offset-2 row mb-3">
+            <div class="container px-md-2 px-lg-4 py-5 mx-auto">
+              <div class="offset-4 row mb-3">
                 <div class="col-2">
                   <img
                     src="./images/mastercard.png"
@@ -100,7 +100,7 @@
                   </div>
                 </div>
               </div>
-              <div class="offset-2 row mb-3">
+              <div class="offset-4 row mb-3">
                 <div class="col-2">
                   <img
                     src="./images/paypal.png"
@@ -123,7 +123,7 @@
                   </div>
                 </div>
               </div>
-              <div class="offset-2 row mb-3">
+              <div class="offset-4 row mb-3">
                 <div class="col-2">
                   <img
                     src="./images/google_pay.png"
@@ -151,17 +151,18 @@
         </div>
         <div class="card m-2 shadow-lg p-4 mb-5 bg-white rounded">
           <div class="card_moyens_paiement">
-            <div class="container-fluid px-1 px-md-2 px-lg-4 mx-auto">
-              <div class="row d-flex justify-content-center">
+            <div class="container px-1 px-md-2 px-lg-4 mx-auto">
+              <div class="offset-1 row d-flex justify-content-center">
                 <div class="col-xl-7 col-lg-8 col-md-9 col-sm-11">
                   <div class="card border-0">
                     <div class="row form-group">
                       <div class="col-sm-7 border-line pb-3">
                         <div class="form-group">
-                          <p class="text-muted text-sm mb-0">
+                          <p class="text-sm mb-0">
                             Titulaire de la carte
                           </p>
                           <input
+                            class="form-control"
                             type="text"
                             name="name"
                             placeholder="Name"
@@ -169,11 +170,12 @@
                           />
                         </div>
                         <div class="form-group">
-                          <p class="text-muted text-sm mb-0">
+                          <p class="text-sm mb-0">
                             Numéro de la carte
                           </p>
                           <div class="row px-3">
                             <input
+                            class="form-control"
                               type="text"
                               name="card-num"
                               placeholder="0000 0000 0000 0000"
@@ -185,10 +187,11 @@
                           </div>
                           <div class="row form-group">
                             <div class="col-sm">
-                              <p class="text-muted text-sm mb-0">
+                              <p class="text-sm mb-0">
                                 Date d'expiration
                               </p>
                               <input
+                              class="form-control"
                                 type="text"
                                 name="exp"
                                 placeholder="MM/YY"
@@ -199,8 +202,9 @@
                               />
                             </div>
                             <div class="col-sm">
-                              <p class="text-muted text-sm mb-0">CVV/CVC</p>
+                              <p class="text-sm mb-0">CVV/CVC</p>
                               <input
+                              class="form-control"
                                 type="password"
                                 name="cvv"
                                 placeholder="000"
@@ -228,12 +232,7 @@
                               >
                             </div>
                           </div>
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary mt-5 offset-8"
-                          >
-                            Paiement
-                          </button>
+                          <button type="submit" class="btn btn-primary mt-5 offset-8">Paiement</button>
                         </div>
                       </div>
                     </div>
