@@ -1,93 +1,109 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 #bouton_retour {
-    width: 20%;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+  width: 20%;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 #logo img {
-    width: 20%;
-    margin-left: 20%;
-    margin-top: 1rem;
+  width: 20%;
+  margin-left: 20%;
+  margin-top: 1rem;
+}
+
+#bouton_retour {
+  color: #090446;
 }
 
 #bouton_retour:hover {
-    cursor: pointer;
-    color: rgba(35, 217, 107, 0.86);
+  cursor: pointer;
+  color: #5c95ff;
 }
 
 #line_2 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .icon_step i {
-    margin: 1rem;
-    font-size: 2rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.text-pipeline {
+  color: #bcd4ff;
+}
+
+.card-body {
+  padding: 11.25rem;
+  margin-top: -10rem;
+}
+
+.card {
+  background-color: #e5e6e4;
 }
 
 h3 {
-    font-weight: 600;
-    text-align: justify;
+  font-weight: 600;
 }
 
 .form-check-input {
-    position: absolute;
-    margin-top: 0.3rem;
-    margin-left: 12rem;
-    display: flex;
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: 15rem;
+  display: flex;
 }
 
-#footer_row{
-    text-align: center;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    background-color: lightgray;
-    font-size: smaller;
-}
-
-#footer_row>*{
-    margin-bottom: 1em;
-}
-
-.liens_footer:hover{
-    color: #5C95FF;
-    cursor: pointer;
+.btn-primary {
+  background-color: #090446 !important;
+  padding: 0.375rem 10rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-    #bouton_retour {
-        width: 20%;
-        font-size: 2rem;
-        /*margin-top: 1rem;*/
-        /*margin-left: 1rem;*/
-    }
-    #logo img {
-        width: 60%;
-        margin-left: 10%;
-        margin-top: 1rem;
-    }
+  #bouton_retour {
+    width: 20%;
+    font-size: 2rem;
+  }
 
-    #line_2 {
-        width: 300%;
-    }
+  #logo img {
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 1rem;
+  }
 
-    .moyens_paiement .row {
-        margin-left: 5%;
-    }
-    .form-check-input {
-        margin-left: 70%;
-        /*margin-left: 3rem;*/
-}
-    #cvv p {
-        margin-top: 0;
-    }
+  #line_2 {
+    width: 300%;
+  }
 
-    .btn {
-        margin: 33%;
-    }
+  .card-body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .moyens_paiement .row {
+    margin-left: 5%;
+  }
+
+  .form-check-input {
+    margin-left: 70%;
+  }
+
+  #cvv p {
+    margin-top: 0;
+  }
+
+  .btn {
+    margin: 15%;
+  }
+
+  .btn-primary {
+    background-color: #090446 !important;
+    padding: 0.375rem 6rem;
+    margin-bottom: 2rem;
+  }
 }
