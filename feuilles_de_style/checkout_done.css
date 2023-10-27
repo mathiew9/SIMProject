@@ -1,0 +1,25 @@
+img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#conf{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #090446;
+}
+
+
+#cma {
+    margin-top: 2rem;
+    background-color:#090446;
+    color:  #FFFFFF;
+    font-size: small;
+}
+
+#confirmation {
+    text-align: center;
+    font-weight: bold;
+    color: #090446;
+}
