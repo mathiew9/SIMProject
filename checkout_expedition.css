@@ -1,0 +1,84 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ .icon_step i{
+    color: #090446;
+ }
+
+#bouton_retour:hover {
+    cursor: pointer;
+    color:#090446;
+}
+
+#line_2 {
+    margin-top: 2rem;
+}
+
+.icon_step i {
+    margin: 1rem;
+    font-size: 2rem;
+}
+ 
+
+#spanclass {
+    margin-bottom: 3rem !important;
+    color: #090446;
+    font-weight: bold;
+}
+
+label {
+    color: #090446;
+}
+
+#nom {
+    color: #5C95FF;
+}
+
+#prenom {
+    color: #5C95FF;
+}
+
+#tel {
+    color: #5C95FF;
+}
+
+#address {
+    color: #5C95FF;
+}
+
+#postcode {
+    color: #5C95FF;
+}
+
+#country {
+    color: #5C95FF;
+}
+
+#pap {
+    background-color:#090446;
+    color:  #FFFFFF;
+    font-size: small;
+    text-align: center;
+}
+
+p{ 
+    color: #5C95FF;
+    font-size: 10px;
+}
+#footer_row{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #E5E6E4;
+    font-size: 15px;
+}
+ 
+#footer_row>*{
+    margin-bottom: 1em;
+}
+ 
+.liens_footer:hover{
+    color: #5C95FF;
+    cursor: pointer;
+}
