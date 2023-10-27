@@ -81,6 +81,7 @@
     color: white;
 }
 
+
 #appliquer_bouton{
     color:#090446;
     border-color: #090446;
@@ -117,4 +118,16 @@
 
 .chiffres_paiement{
     text-align: end;
+}
+
+.image_panier{
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
