@@ -1,3 +1,8 @@
+a {
+    color: black;
+    text-decoration: none;
+  }
+
 .boutons_filtre_tri {
     height: 2em;
     font-size: 15px;
@@ -33,7 +38,7 @@
     border-radius: 0% 10px 10px 0%;
 }
 
-header i {
+header a {
     font-size: 2em;
     display: flex;
     align-items: center;
@@ -53,55 +58,6 @@ header i {
     border: none;
 }
 
-.retour_haut {
-    width: 2em;
-    text-align: center;
-    border: solid 2px;
-    border-radius: 10px;
-    font-size: 2em;
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    color: #090446;
-    background-color: #5C95FF;
-    transition: transform .15s;
-    will-change: transform;
-}
-
-.retour_haut:hover {
-    transform: translateY(-4px);
-    color: #5C95FF;
-    background-color: #090446;
-}
-
-.retour_haut:active {
-    color: #090446;
-    background-color: #5C95FF;
-    transform: translateY(4px);
-}
-
-.scroll_down {
-    display: none;
-}
-
-.menuburger {
-    position: absolute;
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-x: hidden;
-    padding-top: 60px; 
-    transition: 0.5s;
-}
-
-.burger_categories:hover, .burger_categories>a:hover {
-    color:#5C95FF;
-}
-
 .curseur_pointeur {
     cursor:pointer;
 }
@@ -109,32 +65,6 @@ header i {
 .filtreflou {
     filter: blur(4px);
 }
-
-
-/*-----------Menu Burger------------*/
-.menuburger a {
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    text-align: left;
-}
-
-.menuburger i {
-    font-size: 2em;
-}
-
-.menuburger {
-    border-right: solid 1px;
-    border-color: #090446;
-}
-
-.icon_burger_rotate{
-    transform: rotate(90deg);
-    display: inline-block;
-    margin-top: -50px;
-}
-/*...........Menu Burger.............*/
 
 .nbr_articles{
     color: #090446;
@@ -191,12 +121,55 @@ header i {
     cursor: pointer;
 }
 
+/*---------------Menu Burger---------------*/
+.menuburger {
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+    border-right: solid 1px;
+    border-color: #090446;
+}
+
+.menuburger a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.menuburger i {
+    font-size: 2em;
+}
+
+.burger_categories:hover, .burger_categories>a:hover {
+    color:#5C95FF;
+}
+
+.icon_burger_rotate{
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-top: -50px;
+}
+/*...............Menu_Burger...............*/
+
+/*---------------FOOTER---------------*/
 #footer_row{
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1em;
     background-color: lightgray;
     font-size: smaller;
+    /* bottom: 0; */
+    /* position: absolute; */
 }
 
 #footer_row>*{
@@ -207,3 +180,35 @@ header i {
     color: #5C95FF;
     cursor: pointer;
 }
+/*...............Footer...............*/
+
+/*---------------RETOUR_HAUT---------------*/
+.retour_haut {
+    width: 2em;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: #090446;
+    transition: transform .15s;
+    will-change: transform;
+}
+
+.retour_haut:hover {
+    transform: translateY(-4px);
+    color: #5C95FF;
+    background-color: #090446;
+}
+
+.retour_haut:active {
+    color: #090446;
+    background-color: #5C95FF;
+    transform: translateY(4px);
+}
+
+.scroll_down {
+    display: none;
+}
+/*...............RETOUR_HAUT...............*/
