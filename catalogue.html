@@ -1,93 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SportGlobes</title>
     <link rel="icon" type="image/png" href="./images/logo_ballon-nobg.png" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+    ></script>
     <script type="text/javascript" src="./javascript/catalogue.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./feuilles_de_style/catalogue.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./feuilles_de_style/catalogue.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="monMenuBurger" class="menuburger">
-        <div class="row mb-4 mx-2">
-            <a href="javascript:void(0)" onclick="fermerBurger()">
-                <i class="bi bi-text-paragraph icon_burger_rotate"></i>
-            </a>
-        </div>
-        <div class="row">
-            <img class="col-10 offset-1 mb-4" src="./images/SG_logo-nobg.png" alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes.">
-        </div>
-        <div class="row align-items-center burger_categories">
-            <i class="bi bi-house offset-1 col-2"></i>
-            <a href="#" class="col-9">Page d'accueil</a>
-        </div>
-        <div class="row align-items-center burger_categories mt-4">
-            <i class="bi bi-person offset-1 col-2"></i>
-            <a href="#" class="col-9">Mon compte</a>
-        </div>
-        <div class="row align-items-center burger_categories mt-4">
-            <i class="bi bi-cart2 offset-1 col-2"></i>
-            <a href="#" class="col-9"> Mon panier</a>
-        </div>
-        <div class="row align-items-center burger_categories mt-4">
-            <i class="bi bi-handbag offset-1 col-2"></i>
-            <a href="#" class="col-9">Mes achats</a>
-        </div>
-        <div class="row align-items-center burger_categories mt-4">
-            <i class="bi bi-heart offset-1 col-2"></i>
-            <a href="#" class="col-9">Mes favoris</a>
-        </div>
-        <div class="row align-items-center burger_categories mt-4">
-            <i class="bi bi-gear offset-1 col-2"></i>
-            <a href="#" class="col-9">Paramètres</a>
-        </div>
+      <div class="row mb-4 mx-2">
+        <a href="javascript:void(0)" onclick="fermerBurger()">
+          <i class="bi bi-text-paragraph icon_burger_rotate"></i>
+        </a>
+      </div>
+      <div class="row">
+        <img
+          class="col-10 offset-1 mb-4"
+          src="./images/SG_logo-nobg.png"
+          alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes."
+        />
+      </div>
+      <div class="row align-items-center burger_categories">
+        <i class="bi bi-house offset-1 col-2"></i>
+        <a href="#" class="col-9">Page d'accueil</a>
+      </div>
+      <div class="row align-items-center burger_categories mt-4">
+        <i class="bi bi-person offset-1 col-2"></i>
+        <a href="#" class="col-9">Mon compte</a>
+      </div>
+      <div class="row align-items-center burger_categories mt-4">
+        <i class="bi bi-cart2 offset-1 col-2"></i>
+        <a href="#" class="col-9"> Mon panier</a>
+      </div>
+      <div class="row align-items-center burger_categories mt-4">
+        <i class="bi bi-handbag offset-1 col-2"></i>
+        <a href="#" class="col-9">Mes achats</a>
+      </div>
+      <div class="row align-items-center burger_categories mt-4">
+        <i class="bi bi-heart offset-1 col-2"></i>
+        <a href="#" class="col-9">Mes favoris</a>
+      </div>
+      <div class="row align-items-center burger_categories mt-4">
+        <i class="bi bi-gear offset-1 col-2"></i>
+        <a href="#" class="col-9">Paramètres</a>
+      </div>
     </div>
 
     <div class="container-fluid">
-        <header class="row aligner_centre" id="header">
-            <img class="col-2 col-md-1" src="./images/Logo_Ballon.png" alt="SportGlobes ballon">
-            <img class="col-4 col-md-4" src="./images/Logo_Nom.png" alt="SportGlobes">
-            <a href="#" class="offset-md-4 col-2 col-md-1"><i class="offset-md-4 col-2 col-md-1 bi bi-person"></i></a>
-            <a href="#" class="col-2 col-md-1"><i class="bi bi-heart"></i></a>
-            <a href="panier.html" class="col-2 col-md-1"><i class="bi bi-cart2"></i></a>
-        </header>
-        <div class="row row_icons barre_recherche">
-            <div class="col-2 col-md-1 bordure_droite aligner_centre curseur_pointeur" onclick="ouvrirBurger()">
-                <i class="bi bi-text-paragraph"></i>
-            </div>
-            <div class="col-10">
-                <div class="row aligner_centre">
-                    <i class="bi bi-search col-2 col-md-1"></i>
-                    <input type="text" class="col-9 col-md-11" id="input_recherche" placeholder="Rechercher un produit..">
-                </div>
-            </div>
-
+      <header class="row aligner_centre" id="header">
+        <img
+          class="col-2 col-md-1"
+          src="./images/Logo_Ballon.png"
+          alt="SportGlobes ballon"
+        />
+        <img
+          class="col-4 col-md-4"
+          src="./images/Logo_Nom.png"
+          alt="SportGlobes"
+        />
+        <a href="#" class="offset-md-4 col-2 col-md-1"
+          ><i class="offset-md-4 col-2 col-md-1 bi bi-person"></i
+        ></a>
+        <a href="#" class="col-2 col-md-1"><i class="bi bi-heart"></i></a>
+        <a href="panier.html" class="col-2 col-md-1"
+          ><i class="bi bi-cart2"></i
+        ></a>
+      </header>
+      <div class="row row_icons barre_recherche">
+        <div
+          class="col-2 col-md-1 bordure_droite aligner_centre curseur_pointeur"
+          onclick="ouvrirBurger()"
+        >
+          <i class="bi bi-text-paragraph"></i>
         </div>
-        <div class="row align-items-center">
-                <button class="col-4 col-md-2 offset-2 offset-md-8 boutons_filtre_tri" id="bouton_tri">Trier<i class="bi bi-arrow-down-up ms-1"></i></button>
-                <button class="col-4 col-md-2 boutons_filtre_tri" id="bouton_filtre">Filtrer<i class="bi bi-funnel ms-1"></i></button> 
+        <div class="col-10">
+          <div class="row aligner_centre">
+            <i class="bi bi-search col-2 col-md-1"></i>
+            <input
+              type="text"
+              class="col-9 col-md-11"
+              id="input_recherche"
+              placeholder="Rechercher un produit.."
+            />
+          </div>
         </div>
+      </div>
+      <div class="row align-items-center">
+        <button
+          class="col-4 col-md-2 offset-2 offset-md-8 boutons_filtre_tri"
+          id="bouton_tri"
+        >
+          Trier<i class="bi bi-arrow-down-up ms-1"></i>
+        </button>
+        <button class="col-4 col-md-2 boutons_filtre_tri" id="bouton_filtre">
+          Filtrer<i class="bi bi-funnel ms-1"></i>
+        </button>
+      </div>
 
-        <div class="row aligner_centre nbr_articles mt-3 mb-3">
+      <div class="row aligner_centre nbr_articles mt-3 mb-3">
         <div class="col-12">45 articles trouvés</div>
-        </div>
+      </div>
 
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" id="card_affiche">
-            <script>
-                let requete = fetch("http://localhost:3000/produits")
-                    requete.then(function (response) {
-                        response.json().then(function (data) {
-                            let cards = "";
-                            data.forEach((element) => {
-                                cards += `<div class="col mb-2 d-flex align-items-stretch">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" id="card_affiche">
+        <script>
+          let requete = fetch("http://localhost:3000/products");
+          requete.then(function (response) {
+            response.json().then(function (data) {
+              let cards = "";
+              data.forEach((element) => {
+                cards += `<div class="col mb-2 d-flex align-items-stretch">
                                             <div class="card shadow">
                                                 <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris"></i>
                                                 <div class="card_image"><div class="card_image">
@@ -102,27 +149,136 @@
                                                     <a href="#" class="btn btn-primary btn_ajout_panier align-self-start mt-auto">Ajouter au panier</a>
                                                 </div>
                                             </div>
-                                        </div>`
+                                        </div>`;
+              });
+              document.querySelector("#card_affiche").innerHTML = cards;
+            });
+          });
+        </script>
+      </div>
 
-                            });
-                            document.querySelector("#card_affiche").innerHTML = cards;
-                        
-                        });
-                        
-                    });
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#produitModal"
+      >
+        Créer un produit
+      </button>
+    </div>
+    <!-- Modal pour ajouter un produit -->
+    <div
+      class="modal fade"
+      id="produitModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="produitModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="produitModalLabel">
+              Ajouter un produit
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" enctype="multipart/form-data" id="produitForm">
+              <!-- Champ pour le titre du produit -->
+              <div class="mb-3">
+                <label for="titre" class="form-label">Titre du produit</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="titre"
+                  name="titre"
+                  required
+                />
+              </div>
 
-            </script>
-        
+              <!-- Champ pour le prix du produit -->
+              <div class="mb-3">
+                <label for="prix" class="form-label">Prix du produit</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="prix"
+                  name="prix"
+                />
+              </div>
+
+              <!-- Champ pour la categorie du produit -->
+              <div class="mb-3">
+                <label for="categorie" class="form-label"
+                  >Categorie du produit</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="categorie"
+                  name="categorie"
+                />
+              </div>
+
+              <!-- Champ pour l'image du produit -->
+              <div class="mb-3">
+                <label for="image" class="form-label">Image du produit</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="image"
+                  name="image"
+                />
+              </div>
+
+              <!-- Champ pour la description du produit -->
+              <div class="mb-3">
+                <label for="description" class="form-label"
+                  >Description du produit</label
+                >
+                <textarea
+                  class="form-control"
+                  id="description"
+                  name="description"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <button type="submit" id="" class="btn btn-primary">
+                Ajouter le produit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="row mt-3" id="footer_row">
-        <span>Copyright <i class="bi bi-c-circle"></i> 2023 SportGlobes, Tous droits réservés.</span>
-        <div><span class="liens_footer"> Mentions Légales</span> | <span class="liens_footer">CGV</span> | <span class="liens_footer">Protection des données personnelles</span> | <span class="liens_footer">Réglage cookies</span></div>
-        <span><i class="bi bi-facebook"></i> - <i class="bi bi-instagram"></i> - <i class="bi bi-twitter-x"></i> - <i class="bi bi-linkedin"></i></span>
+      <span
+        >Copyright <i class="bi bi-c-circle"></i> 2023 SportGlobes, Tous droits
+        réservés.</span
+      >
+      <div>
+        <span class="liens_footer"> Mentions Légales</span> |
+        <span class="liens_footer">CGV</span> |
+        <span class="liens_footer">Protection des données personnelles</span> |
+        <span class="liens_footer">Réglage cookies</span>
+      </div>
+      <span
+        ><i class="bi bi-facebook"></i> - <i class="bi bi-instagram"></i> -
+        <i class="bi bi-twitter-x"></i> - <i class="bi bi-linkedin"></i
+      ></span>
     </footer>
 
     <a href="#header" class="retour_haut scroll_down">
-        <i class="bi bi-chevron-up"></i>
+      <i class="bi bi-chevron-up"></i>
     </a>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
