@@ -1,0 +1,18 @@
+#footer_row{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: lightgray;
+    font-size: smaller;
+    /* bottom: 0; */
+    /* position: absolute; */
+}
+
+#footer_row>*{
+    margin-bottom: 1em;
+}
+
+.liens_footer:hover{
+    color: #5C95FF;
+    cursor: pointer;
+}
