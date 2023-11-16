@@ -1,0 +1,37 @@
+.menuburger {
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+    border-right: solid 1px;
+    border-color: #090446;
+}
+
+.menuburger a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.menuburger i {
+    font-size: 2em;
+}
+
+.burger_categories:hover, .burger_categories>a:hover {
+    color:#5C95FF;
+}
+
+.icon_burger_rotate{
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-top: -50px;
+}

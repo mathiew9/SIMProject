@@ -1,10 +1,13 @@
 import ListProducts from "../Products/ListProducts";
+import NavbarCatalogue from "./NavbarCatalogue";
+import Menuburger from "./Menuburger";
 
 const Catalogue = () => {
   return (
     <div>
-      <h2>Catalogue</h2>
+      <NavbarCatalogue />
       <ListProducts />
+      <Menuburger />
     </div>
   );
 };

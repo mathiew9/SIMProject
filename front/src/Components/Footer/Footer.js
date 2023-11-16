@@ -8,9 +8,9 @@ function Footer() {
         réservés.
       </span>
       <div>
-        <span class="liens_footer"> Mentions Légales</span> |
-        <span class="liens_footer">CGV</span> |
-        <span class="liens_footer">Protection des données personnelles</span> |
+        <span class="liens_footer"> Mentions Légales</span>|
+        <span class="liens_footer">CGV</span>|
+        <span class="liens_footer">Protection des données personnelles</span>|
         <span class="liens_footer">Réglage cookies</span>
       </div>
       <span>
