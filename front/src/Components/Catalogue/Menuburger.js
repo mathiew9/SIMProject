@@ -1,54 +1,55 @@
 import "./Menuburger.css";
+import LogoBallon from "../../Assets/images/logo_Ballon-nobg.png";
 
 const Menuburger = () => {
   return (
-    <div id="monMenuBurger" class="menuburger">
-      <div class="row mb-4 mx-2">
-        <a href="javascript:void(0)" onclick="fermerBurger()">
-          <i class="bi bi-text-paragraph icon_burger_rotate"></i>
+    <div id="monMenuBurger" className="menuburger">
+      <div className="row mb-4 mx-2">
+        <a href="javascript:void(0)" onClick="fermerBurger()">
+          <i className="bi bi-text-paragraph icon_burger_rotate"></i>
         </a>
       </div>
-      <div class="row">
+      <div className="row">
         <img
-          class="col-10 offset-1 mb-4"
-          src="./images/SG_logo-nobg.png"
+          className="col-10 offset-1 mb-4"
+          src={LogoBallon}
           alt="Logo deu site : un ballon de basket, une étoile filante et le texte SportGlobes."
         />
       </div>
-      <div class="row align-items-center burger_categories">
-        <i class="bi bi-house offset-1 col-2"></i>
-        <a href="#" class="col-9">
+      <div className="row align-items-center burger_categories">
+        <i className="bi bi-house offset-1 col-2"></i>
+        <a href="#" className="col-9">
           Page d'accueil
         </a>
       </div>
-      <div class="row align-items-center burger_categories mt-4">
-        <i class="bi bi-person offset-1 col-2"></i>
-        <a href="#" class="col-9">
+      <div className="row align-items-center burger_categories mt-4">
+        <i className="bi bi-person offset-1 col-2"></i>
+        <a href="#" className="col-9">
           Mon compte
         </a>
       </div>
-      <div class="row align-items-center burger_categories mt-4">
-        <i class="bi bi-cart2 offset-1 col-2"></i>
-        <a href="#" class="col-9">
+      <div className="row align-items-center burger_categories mt-4">
+        <i className="bi bi-cart2 offset-1 col-2"></i>
+        <a href="#" className="col-9">
           {" "}
           Mon panier
         </a>
       </div>
-      <div class="row align-items-center burger_categories mt-4">
-        <i class="bi bi-handbag offset-1 col-2"></i>
-        <a href="#" class="col-9">
+      <div className="row align-items-center burger_categories mt-4">
+        <i className="bi bi-handbag offset-1 col-2"></i>
+        <a href="#" className="col-9">
           Mes achats
         </a>
       </div>
-      <div class="row align-items-center burger_categories mt-4">
-        <i class="bi bi-heart offset-1 col-2"></i>
-        <a href="#" class="col-9">
+      <div className="row align-items-center burger_categories mt-4">
+        <i className="bi bi-heart offset-1 col-2"></i>
+        <a href="#" className="col-9">
           Mes favoris
         </a>
       </div>
-      <div class="row align-items-center burger_categories mt-4">
-        <i class="bi bi-gear offset-1 col-2"></i>
-        <a href="#" class="col-9">
+      <div className="row align-items-center burger_categories mt-4">
+        <i className="bi bi-gear offset-1 col-2"></i>
+        <a href="#" className="col-9">
           Paramètres
         </a>
       </div>
