@@ -13,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Catalogue />} />
           <Route path="/panier" element={<Panier />} />
+          <Route path="/checkoutexpedition" element={<Form />} />
+          <Route path="/checkountdone" element={<Confirmation />} />
         </Routes>
       </BrowserRouter>
       <Form />
