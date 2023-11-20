@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./Footer/Footer";
 import Catalogue from "./Catalogue/Catalogue";
 import Panier from "./Panier/Panier";
+import Form from "./Formulaire/formulaire_expedition";
+import Confirmation from "./Confirmation/confirmation";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
           <Route path="/panier" element={<Panier />} />
         </Routes>
       </BrowserRouter>
+      <Form />
+      <Confirmation />
       <Footer />
     </div>
   );
