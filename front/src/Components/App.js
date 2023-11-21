@@ -1,11 +1,13 @@
 import React from "react";
 import Footer from "./Footer/Footer";
 import Catalogue from "./Catalogue/Catalogue";
+import CheckoutPayment from "./CheckoutPayment/CheckoutPayment";
 
 function App() {
   return (
     <div className="App">
-      <Catalogue />
+      {/* <Catalogue />/ */}
+      <CheckoutPayment />
       <Footer />
     </div>
   );
