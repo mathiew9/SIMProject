@@ -1,8 +1,13 @@
 import "./Products.css";
+import { addPanier } from "../Panier/Panier";
 
 const Product = (props) => {
+  const handleAddToCart = () => {
+    addPanier(props);
+  };
+
   return (
-    <div>
+    <div className="product-card">
       <div className="card border-0 rounded-2 shadow">
         <div className="d-flex justify-content-center">
           <img
@@ -10,6 +15,7 @@ const Product = (props) => {
             className="card-img-top rounded-0 pt-2"
             alt="..."
           />
+          <p className="card-description">{props.description}</p>
         </div>
         <div className="card-body mt-3 mb-3">
           <div className="row">
@@ -33,8 +39,12 @@ const Product = (props) => {
             <h5>{props.prix} €</h5>
           </div>
           <div className="col-8">
-            <a href="#" className="btn w-100 p-3 addToCart">
-              ADD TO CART
+            <a
+              href="#"
+              className="btn w-100 p-3 addToCart"
+              onClick={handleAddToCart}
+            >
+              AJOUTER AU PANIER
             </a>
           </div>
         </div>
