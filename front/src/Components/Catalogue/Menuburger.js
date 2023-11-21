@@ -1,11 +1,35 @@
 import "./Menuburger.css";
 import LogoBallon from "../../Assets/images/logo_Ballon-nobg.png";
 
+function ouvrirBurger() {
+  const menuBurger = document.getElementById("monMenuBurger");
+  if (menuBurger) {
+    menuBurger.style.width = "250px";
+    document
+      .querySelectorAll("body > *:not(.menuburger)")
+      .forEach((element) => {
+        element.classList.add("filtreflou");
+      });
+  }
+}
+
+function fermerBurger() {
+  const menuBurger = document.getElementById("monMenuBurger");
+  if (menuBurger) {
+    menuBurger.style.width = "0";
+    document
+      .querySelectorAll("body > *:not(.menuburger)")
+      .forEach((element) => {
+        element.classList.remove("filtreflou");
+      });
+  }
+}
+
 const Menuburger = () => {
   return (
     <div id="monMenuBurger" className="menuburger">
       <div className="row mb-4 mx-2">
-        <a href="javascript:void(0)" onClick="fermerBurger()">
+        <a href="javascript:void(0)" onClick={fermerBurger}>
           <i className="bi bi-text-paragraph icon_burger_rotate"></i>
         </a>
       </div>

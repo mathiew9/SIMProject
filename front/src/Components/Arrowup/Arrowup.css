@@ -1,0 +1,28 @@
+.retour_haut {
+    width: 2em;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: #090446;
+    transition: transform .15s;
+    will-change: transform;
+}
+
+.retour_haut:hover {
+    transform: translateY(-4px);
+    color: #5C95FF;
+    background-color: #090446;
+}
+
+.retour_haut:active {
+    color: #090446;
+    background-color: #5C95FF;
+    transform: translateY(4px);
+}
+
+.scroll_down {
+    display: none;
+}

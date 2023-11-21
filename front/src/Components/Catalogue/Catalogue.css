@@ -1,0 +1,13 @@
+.centered-banner {
+    max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centre horizontalement l'image */
+  max-height: 300px; /* Définissez la hauteur maximale souhaitée */
+  width: auto; /* Ajustez automatiquement la largeur en fonction de la hauteur maximale */
+
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
