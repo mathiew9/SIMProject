@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./Footer/Footer";
 import Catalogue from "./Catalogue/Catalogue";
 import Panier from "./Panier/Panier";
-import Form from "./formulaire/formulaire_expedition";
+import Form from "./Formulaire/formulaire_expedition";
 import Confirmation from "./Confirmation/confirmation";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 
