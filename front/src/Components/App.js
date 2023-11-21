@@ -17,8 +17,6 @@ function App() {
           <Route path="/checkountdone" element={<Confirmation />} />
         </Routes>
       </BrowserRouter>
-      <Form />
-      <Confirmation />
       <Footer />
     </div>
   );
