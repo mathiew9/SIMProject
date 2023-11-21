@@ -1,5 +1,5 @@
 import "./Menuburger.css";
-import LogoBallon from "../../Assets/images/logo_Ballon-nobg.png";
+import LogoBallon from "../../Assets/images/logo_ballon-nobg.png";
 
 const Menuburger = () => {
   return (
