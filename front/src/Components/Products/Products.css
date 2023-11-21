@@ -1,0 +1,19 @@
+.card{
+    width: 18rem;
+}
+
+.card-img-top {
+    width: 75%;
+}
+
+.addToCart {
+    background-color: #090446;
+    color: white;
+    border-bottom-right-radius: 50%;
+}
+
+.addToCart:hover {
+    background-color: white;
+    color: #090446;
+    border: 1px solid #090446;
+}
