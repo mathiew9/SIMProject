@@ -18,7 +18,7 @@ const addProduct = (req, res) => {
     description: req.body.description,
     prix: req.body.prix,
     categorie: req.body.categorie,
-    image: req.file.filename,
+    image: req.body.image,
   });
 
   product

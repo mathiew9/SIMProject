@@ -9,7 +9,6 @@ import React, { useState, useEffect } from "react";
 import Footer from "../Footer/Footer";
 
 export const addPanier = (produit) => {
-  // Récupérer le panier actuel depuis localStorage
   const panierData = localStorage.getItem("panier");
   let panier = [];
 
@@ -17,27 +16,23 @@ export const addPanier = (produit) => {
     panier = JSON.parse(panierData);
   }
 
-  // Ajouter le nouveau produit
   panier.push(produit);
 
-  // Sauvegarder le panier dans localStorage
   localStorage.setItem("panier", JSON.stringify(panier));
 };
 
 const Panier = () => {
   const clearPanier = () => {
-    // Supprimer tous les éléments du panier dans le localStorage
     localStorage.removeItem("panier");
   };
 
   const handleViderPanier = () => {
-    clearPanier(); // Appel de la fonction pour vider le panier
-    setProduitsPanier([]); // Mettre à jour l'état local des produits du panier
+    clearPanier();
+    setProduitsPanier([]);
   };
 
   const [produitsPanier, setProduitsPanier] = useState([]);
 
-  // Fonction pour récupérer les produits du panier depuis le localStorage
   useEffect(() => {
     const panierData = localStorage.getItem("panier");
     if (panierData) {
@@ -45,8 +40,34 @@ const Panier = () => {
     }
   }, []);
 
+  // Fonction pour calculer le sous-total
+  const calculerSousTotal = () => {
+    return produitsPanier.reduce(
+      (total, product) => total + parseFloat(product.prix),
+      0
+    );
+  };
+
+  // Calcul du total (sous-total + frais de livraison)
+  const calculerTotal = () => {
+    return calculerSousTotal() + 5.99;
+  };
+
   const [produitsPanierDisplay, setProduitsPanierDisplay] = useState([]);
 
+  const onSupprimerProduit = (productId) => {
+    // Filtrer les produits pour exclure celui avec l'ID spécifié
+    const nouveauxProduits = produitsPanier.filter(
+      (product) => product.id !== productId
+    );
+    console.log(nouveauxProduits);
+
+    // Mettre à jour l'état avec les nouveaux produits
+    setProduitsPanier(nouveauxProduits);
+
+    // Mettre à jour le localStorage avec les nouveaux produits
+    localStorage.setItem("panier", JSON.stringify(nouveauxProduits));
+  };
   return (
     <div className="container-fluid">
       <header id="header">
@@ -91,22 +112,30 @@ const Panier = () => {
               </div>
               <div>
                 {produitsPanier.map((product) => (
-                  <ProduitsPanierDisplay key={product.id} produit={product} />
+                  <ProduitsPanierDisplay
+                    key={product.id}
+                    produit={product}
+                    onSupprimerProduit={onSupprimerProduit}
+                  />
                 ))}
               </div>
               <div className="card mb-4 w-100">
                 <div className="card-body prix_paiement">
                   <div className="row mb-1">
                     <div className="col-8">Sous-total</div>
-                    <div className="chiffres_paiement col-4">52.98</div>
+                    <div className="chiffres_paiement col-4">
+                      {calculerSousTotal().toFixed(2)} €
+                    </div>
                   </div>
                   <div className="row mb-1">
                     <div className="col-8">Frais de livraison</div>
-                    <div className="chiffres_paiement col-4">5.99</div>
+                    <div className="chiffres_paiement col-4">5.99 €</div>
                   </div>
                   <div className="row pt-1 total">
                     <div className="col-8">Total</div>
-                    <div className="chiffres_paiement col-4">58.97</div>
+                    <div className="chiffres_paiement col-4">
+                      {calculerTotal().toFixed(2)} €
+                    </div>
                   </div>
                 </div>
               </div>
