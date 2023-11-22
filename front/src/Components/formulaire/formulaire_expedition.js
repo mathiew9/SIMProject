@@ -15,15 +15,13 @@ const Form = () => {
 
   return (
     <div>
-      <div class="container">
-      <img className="img-fluid" src={imagebrand} alt="panier!" />
-      </div>
+      <img className="img-fluid d-block mx-auto w-20" src={imagebrand} alt="Logo" />
     <div className="container-fluid">
       <div className="row">
         <span id="details_exp" className="text-center">Entrez les détails d'expédition</span>
       </div>
       <div className="row justify-content-center">
-        <form className="w-25">
+        <form className="" id="formulaire-expedition">
           <div className="mb-3">
             <label htmlFor="nom" className="form-label">Nom de famille*</label>
             <input
