@@ -1,26 +1,46 @@
-body{
-    font-family: 'Open Sans', sans-serif;  
-}
-
-label {
-    color: #090446;
-}
-
-p{
-    font-weight: 100;
-    font-size: small;
-    color: #5C95FF;
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 30%;
+    height: auto;
 }
 
 #details_exp {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
     font-weight: bold;
+    color: #090446;
 }
 
-.icon_step i{
-    color: #090446
+/* Formulaire responsive */
+#formulaire-expedition{
+    width: 100%;
+}
+@media screen and (min-width: 991px) {
+    #formulaire-expedition{
+        width: 25%;
+    }
+}
+
+
+.form-label{
+    margin-top: 0,5rem;
+}
+
+.limited-width {
+    max-width: 400px; /* Choisis une largeur maximale adaptée à ton design */
+  }
+
+#tel{
+    max-width: 325px;
 }
 
 #pap{
+    display: block; 
+    margin: 0 auto;
+    margin-top: 2rem;
     background-color: #090446;
     border-color: #5C95FF;
 }
@@ -31,7 +51,6 @@ input.inputs, option, select.form-select {
 input.inputs:focus {
     color: #5C95FF;
 }
-
 
 #footer_row{
     text-align: center;
@@ -49,7 +68,6 @@ input.inputs:focus {
     color: #5C95FF;
     cursor: pointer;
 }
-
 
 input.inputs::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #5C95FF;

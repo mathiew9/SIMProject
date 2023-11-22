@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import imagebrand from "../../Assets/images/Logo_Nom-nobg.png";
 import "./formulaire_expedition.css";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -12,27 +14,32 @@ const Form = () => {
   });
 
   return (
-    <div className="container">
+    <div>
+      <img className="img-fluid d-block mx-auto w-20" src={imagebrand} alt="Logo" />
+    <div className="container-fluid">
       <div className="row">
         <span id="details_exp" className="text-center">
           Entrez les détails d'expédition
         </span>
       </div>
-      <div className="row">
-        <form>
+      <div className="row justify-content-center">
+        <form className="" id="formulaire-expedition">
           <div className="mb-3">
             <label htmlFor="nom" className="form-label">
               Nom de famille*
             </label>
             <input
               type="text"
-              className="inputs form-control"
+              className="form-control inputs limited-width"
               id="nom"
               name="nom"
               value={formData.nom}
-              onChange={(e) =>
-                setFormData({ ...formData, nom: e.target.value })
-              }
+              onChange={(e) => {
+                const re = /^[a-zA-Z\s]*$/; // Expression régulière pour les lettres et les espaces
+                if (re.test(e.target.value)) {
+                  setFormData({ ...formData, nom: e.target.value });
+                }
+              }}              
               placeholder="Entrez le nom"
               minLength="2"
               required
@@ -44,13 +51,16 @@ const Form = () => {
             </label>
             <input
               type="text"
-              className="form-control inputs"
+              className="form-control inputs limited-width"
               id="prenom"
               name="prenom"
               value={formData.prenom}
-              onChange={(e) =>
-                setFormData({ ...formData, prenom: e.target.value })
-              }
+              onChange={(e) => {
+                const re = /^[a-zA-Z\s]*$/; // Expression régulière pour les lettres et les espaces
+                if (re.test(e.target.value)) {
+                  setFormData({ ...formData, prenom: e.target.value });
+                }
+              }}
               placeholder="Entrez le prénom"
               minLength="2"
               required
@@ -75,13 +85,16 @@ const Form = () => {
                 </div>
                 <input
                   type="tel"
-                  className="form-control inputs"
+                  className="form-control inputs limited-width"
                   name="tel"
                   id="tel"
                   value={formData.tel}
-                  onChange={(e) =>
-                    setFormData({ ...formData, tel: e.target.value })
-                  }
+                  onChange={(e) => {
+                    const re = /^[0-9\b]+$/; // Expression régulière pour les chiffres
+                    if (e.target.value === '' || re.test(e.target.value)) {
+                      setFormData({ ...formData, tel: e.target.value });
+                    }
+                  }}
                   placeholder="00 00 00 00 00"
                   maxLength="10"
                   required
@@ -95,7 +108,7 @@ const Form = () => {
             </label>
             <input
               type="text"
-              className="form-control inputs"
+              className="form-control inputs limited-width"
               name="address"
               id="address"
               value={formData.address}
@@ -112,13 +125,16 @@ const Form = () => {
             </label>
             <input
               type="number"
-              className="form-control inputs"
+              className="form-control inputs limited-width"
               name="postcode"
               id="postcode"
               value={formData.postcode}
-              onChange={(e) =>
-                setFormData({ ...formData, postcode: e.target.value })
-              }
+              onChange={(e) => {
+                const re = /^[0-9]+$/; // Expression régulière pour les chiffres
+                if (e.target.value === '' || re.test(e.target.value)) {
+                  setFormData({ ...formData, postcode: e.target.value });
+                }
+              }}
               placeholder="Entrez le code postal"
               required
             />
@@ -129,19 +145,19 @@ const Form = () => {
             </label>
             <input
               type="text"
-              className="form-control inputs"
+              className="form-control inputs limited-width"
               name="country"
               id="country"
               value={formData.country}
-              onChange={(e) =>
-                setFormData({ ...formData, country: e.target.value })
-              }
               placeholder="Entrez le pays"
               required
             />
           </div>
           <div className="mb-3">
+            <p>Champs obligatoires*</p>
+          <Link className="bouton" to="/">
             <button
+              id="pap"
               className="btn btn-primary"
               onClick={() => {
                 console.log(formData);
@@ -149,11 +165,12 @@ const Form = () => {
             >
               Passer au paiement
             </button>
+            </Link>
           </div>
         </form>
       </div>
-      <p>Champs obligatoires*</p>
     </div>
+  </div>
   );
 };
 
