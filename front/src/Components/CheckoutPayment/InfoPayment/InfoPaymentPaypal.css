@@ -5,7 +5,7 @@
 
 .contentContainer {
   position: relative;
-  margin: 130px auto 0;
+  /* margin: 130px auto 0; */
   padding: 30px 10% 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -143,4 +143,14 @@ a:visited {
   -moz-transition: color 0.2s ease-out;
   -o-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .corral {
+    width: 410px;
+  }
+
+  .contentContainer {
+    padding: 0px 20% 50px;
+  }
 }

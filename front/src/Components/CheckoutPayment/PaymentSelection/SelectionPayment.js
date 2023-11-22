@@ -17,12 +17,13 @@ function SelectionPayment() {
   return (
     <>
       <div className="container-fluid card-body">
+        <h3 className="Selection-text pb-4">
+          Sélectionner un moyen de Paiement
+        </h3>
         <div className="card m-2 shadow-lg p-2 mb-5 bg-white rounded">
           <div className="card">
             <div className="container moyens_paiement px-md-2 px-lg-4 py-5 mx-auto">
-              <div className="select_payment row justify-content-center">
-                <h3 className="m-4 pb-5">Sélectionner un moyen de Paiement</h3>
-              </div>
+              <div className="select_payment row justify-content-center"></div>
               <div className="card_moyens_paiement">
                 <div className="cmp row mb-3">
                   <div className="col-2">
@@ -108,9 +109,11 @@ function SelectionPayment() {
                   </div>
                 </div>
               </div>
-              {selectedPayment === "mastercard" && <InfoPaymentCard />}
-              {selectedPayment === "paypal" && <InfoPaymentPaypal />}
-              {selectedPayment === "google_pay" && <InfoPaymentGoogle />}
+              <div className="InfoPaymentSection">
+                {selectedPayment === "mastercard" && <InfoPaymentCard />}
+                {selectedPayment === "paypal" && <InfoPaymentPaypal />}
+                {selectedPayment === "google_pay" && <InfoPaymentGoogle />}
+              </div>
             </div>
           </div>
         </div>
