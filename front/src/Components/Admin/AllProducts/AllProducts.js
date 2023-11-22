@@ -25,7 +25,7 @@ const AllProducts = () => {
         console.error("Fetch error:", err);
       });
 
-    // handleClose();
+    handleClose();
   };
 
   return (
