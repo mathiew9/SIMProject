@@ -35,3 +35,9 @@
     display: inline-block;
     margin-top: -50px;
 }
+
+/* Menuburger.css */
+#bodyContainer.filtreflou {
+    filter: blur(5px); /* ou la quantité de flou souhaitée */
+  }
+  

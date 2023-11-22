@@ -1,28 +1,21 @@
 import "./Menuburger.css";
 import LogoBallon from "../../Assets/images/logo_ballon-nobg.png";
+import { Link } from "react-router-dom";
 
-function ouvrirBurger() {
-  const menuBurger = document.getElementById("monMenuBurger");
-  if (menuBurger) {
-    menuBurger.style.width = "250px";
-    document
-      .querySelectorAll("body > *:not(.menuburger)")
-      .forEach((element) => {
-        element.classList.add("filtreflou");
-      });
-  }
+export function ouvrirBurger() {
+  console.log("ouvrirBurger");
+  document.getElementById("monMenuBurger").style.width = "250px";
+  document.querySelectorAll("body > *:not(.menuburger)").forEach((element) => {
+    element.classList.add("filtreflou");
+  });
 }
 
-function fermerBurger() {
-  const menuBurger = document.getElementById("monMenuBurger");
-  if (menuBurger) {
-    menuBurger.style.width = "0";
-    document
-      .querySelectorAll("body > *:not(.menuburger)")
-      .forEach((element) => {
-        element.classList.remove("filtreflou");
-      });
-  }
+export function fermerBurger() {
+  document.getElementById("monMenuBurger").style.width = "0";
+  document.querySelectorAll("body > *:not(.menuburger)").forEach((element) => {
+    element.classList.remove("filtreflou");
+  });
+  console.log("fermerBurger");
 }
 
 const Menuburger = () => {
@@ -74,7 +67,7 @@ const Menuburger = () => {
       <div className="row align-items-center burger_categories mt-4">
         <i className="bi bi-gear offset-1 col-2"></i>
         <a href="#" className="col-9">
-          Paramètres
+          <Link to="/admin/products">Paramètres</Link>
         </a>
       </div>
     </div>

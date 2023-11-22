@@ -4,6 +4,7 @@ import Catalogue from "./Catalogue/Catalogue";
 import Panier from "./Panier/Panier";
 import Form from "./formulaire/formulaire_expedition";
 import Confirmation from "./Confirmation/confirmation";
+import AllProducts from "./Admin/AllProducts/AllProducts";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
           <Route path="/panier" element={<Panier />} />
           <Route path="/checkoutexpedition" element={<Form />} />
           <Route path="/checkoutdone" element={<Confirmation />} />
+          <Route path="/admin/products" element={<AllProducts />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

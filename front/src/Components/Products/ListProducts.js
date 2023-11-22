@@ -19,8 +19,12 @@ const ListProducts = () => {
       <div className="row aligner_centre nbr_articles mt-3 mb-3">
         <div className="col-12">{longueur} articles trouvés</div>
       </div>
-
-      {products.map((product) => Product(product))}
+      <div
+        class="row row-cols-1 row-cols-md-3 row-cols-lg-4 mb-3"
+        id="card_affiche"
+      >
+        {products.map((product) => Product(product))}
+      </div>
     </div>
   );
 };
