@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 2rem;
+    max-width: 30%;
+    height: auto;
+}
+
+#confirmation {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #090446;
+}
+
+#conf{
+    margin-top: 2rem;
+    text-align: center;
+    color: #090446;
+}
+
+.bouton{
+    text-decoration: none;
+}
+
+#button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color:#090446;
+    color:  #FFFFFF;
+    font-size: small;
+}
+  

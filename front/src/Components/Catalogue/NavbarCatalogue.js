@@ -2,6 +2,7 @@ import "./NavbarCatalogue.css";
 import { Link } from "react-router-dom";
 import LogoNom from "../../Assets/images/Logo_Nom-nobg.png";
 import LogoBallon from "../../Assets/images/logo_ballon-nobg.png";
+import { ouvrirBurger } from "./Menuburger";
 
 const NavbarCatalogue = () => {
   return (
@@ -32,7 +33,7 @@ const NavbarCatalogue = () => {
       <div className="row row_icons barre_recherche">
         <div
           className="col-2 col-md-1 bordure_droite aligner_centre curseur_pointeur"
-          onClick="ouvrirBurger()"
+          onClick={ouvrirBurger}
         >
           <i className="bi bi-text-paragraph"></i>
         </div>

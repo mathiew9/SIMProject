@@ -1,11 +1,28 @@
 import "./Menuburger.css";
 import LogoBallon from "../../Assets/images/logo_ballon-nobg.png";
+import { Link } from "react-router-dom";
+
+export function ouvrirBurger() {
+  console.log("ouvrirBurger");
+  document.getElementById("monMenuBurger").style.width = "250px";
+  document.querySelectorAll("body > *:not(.menuburger)").forEach((element) => {
+    element.classList.add("filtreflou");
+  });
+}
+
+export function fermerBurger() {
+  document.getElementById("monMenuBurger").style.width = "0";
+  document.querySelectorAll("body > *:not(.menuburger)").forEach((element) => {
+    element.classList.remove("filtreflou");
+  });
+  console.log("fermerBurger");
+}
 
 const Menuburger = () => {
   return (
     <div id="monMenuBurger" className="menuburger">
       <div className="row mb-4 mx-2">
-        <a href="javascript:void(0)" onClick="fermerBurger()">
+        <a href="javascript:void(0)" onClick={fermerBurger}>
           <i className="bi bi-text-paragraph icon_burger_rotate"></i>
         </a>
       </div>
@@ -50,7 +67,7 @@ const Menuburger = () => {
       <div className="row align-items-center burger_categories mt-4">
         <i className="bi bi-gear offset-1 col-2"></i>
         <a href="#" className="col-9">
-          Paramètres
+          <Link to="/admin/products">Paramètres</Link>
         </a>
       </div>
     </div>
