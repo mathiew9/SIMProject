@@ -1,3 +1,5 @@
+import j from "../../Assets/images/joueur-de-basketball.png";
+
 const Confirmation = () => {
   return (
     <div className="container">

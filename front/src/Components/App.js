@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Catalogue />} />
           <Route path="/panier" element={<Panier />} />
           <Route path="/checkoutexpedition" element={<Form />} />
-          <Route path="/checkountdone" element={<Confirmation />} />
+          <Route path="/checkoutdone" element={<Confirmation />} />
         </Routes>
       </BrowserRouter>
       <Footer />

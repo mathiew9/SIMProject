@@ -1,7 +1,7 @@
 import "./NavbarCatalogue.css";
 import { Link } from "react-router-dom";
 import LogoNom from "../../Assets/images/Logo_Nom-nobg.png";
-import LogoBallon from "../../Assets/images/logo_Ballon-nobg.png";
+import LogoBallon from "../../Assets/images/logo_ballon-nobg.png";
 
 const NavbarCatalogue = () => {
   return (
