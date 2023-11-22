@@ -1,0 +1,22 @@
+.container-fluid {
+  justify-content: center;
+}
+
+#line_2 {
+  margin-top: 2rem;
+}
+
+.icon_step i {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.text-pipeline {
+  color: #090446;
+}
+
+@media screen and (max-width: 768px) {
+  #line_2 {
+    width: 100%;
+  }
+}

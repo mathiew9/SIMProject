@@ -1,20 +1,27 @@
 const Product = (props) => {
   return (
-    <div class="col mb-2 d-flex align-items-stretch">
-      <div class="card shadow">
-        <i class="bi bi-heart ajouter_favoris" title="Ajouter aux favoris"></i>
-        <div class="card_image">
-          <img class="card-img-top" src={props.image} alt="Card image cap" />
+    <div className="col mb-2 d-flex align-items-stretch">
+      <div className="card shadow">
+        <i
+          className="bi bi-heart ajouter_favoris"
+          title="Ajouter aux favoris"
+        ></i>
+        <div className="card_image">
+          <img
+            className="card-img-top"
+            src={props.image}
+            alt="Card image cap"
+          />
         </div>
-        <div class="card-body d-flex flex-column">
+        <div className="card-body d-flex flex-column">
           <div>
-            <span class="prix_produit">{props.prix} €</span>
-            <h5 class="card-title">{props.titre}</h5>
+            <span className="prix_produit">{props.prix} €</span>
+            <h5 className="card-title">{props.titre}</h5>
           </div>
-          <p class="card-text description">{props.description}</p>
+          <p className="card-text description">{props.description}</p>
           <a
             href="#"
-            class="btn btn-primary btn_ajout_panier align-self-start mt-auto"
+            className="btn btn-primary btn_ajout_panier align-self-start mt-auto"
           >
             Ajouter au panier
           </a>
