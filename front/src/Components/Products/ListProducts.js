@@ -15,9 +15,9 @@ const ListProducts = () => {
   let longueur = products.length;
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4  d-flex flex-column">
       <div className="row aligner_centre nbr_articles mt-3 mb-3">
-        <div className="col-12">{longueur} articles trouvés</div>
+        <div className="col-12 artFound">{longueur} articles trouvés</div>
       </div>
       <div
         class="row row-cols-1 row-cols-md-3 row-cols-lg-4 mb-3"
