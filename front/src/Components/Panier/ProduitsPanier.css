@@ -1,0 +1,77 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#fleche_retour {
+    font-size: 2em;
+    color:#090446;
+}
+
+#panier_basket{
+    text-align: center;
+}
+
+#panier_basket>img{
+    width: 4em;
+}
+
+#panier_header{
+    text-align: center;
+    font-size: 20px;
+    color: #090446;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+
+#reduction{
+    margin-left: 0px;
+    display: inline-block;
+}
+
+#proceder_paiement {
+    background-color: #090446;
+    color: white;
+}
+
+#appliquer_bouton{
+    color:#090446;
+    border-color: #090446;
+}
+
+#appliquer_bouton:hover{
+    color:white;
+    background-color: #090446;
+}
+
+.pas_afficher {
+    display: none;
+}
+
+.panier_traits{
+    align-items: center;
+}
+
+.traits{
+    border: solid 1px;
+    border-color: #090446;
+}
+
+#section_produits{
+    background-color: #e5e6e4;
+    border-radius: 10px;
+}
+
+.total {
+    border-top: solid 1px;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+
+.chiffres_paiement{
+    text-align: end;
+}
+
+.img_produit_panier{
+    width: 75%;
+}

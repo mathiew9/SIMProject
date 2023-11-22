@@ -1,3 +1,4 @@
+import "./ListProducts.css";
 import Product from "./Product";
 import React, { useState, useEffect } from "react";
 import FetchProducts from "../../Services/FetchProducts";
@@ -11,7 +12,21 @@ const ListProducts = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  return <div>{products.map((product) => Product(product))}</div>;
+  let longueur = products.length;
+
+  return (
+    <div className="container mt-4">
+      <div className="row aligner_centre nbr_articles mt-3 mb-3">
+        <div className="col-12">{longueur} articles trouvés</div>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-3 row-cols-lg-4 mb-3"
+        id="card_affiche"
+      >
+        {products.map((product) => Product(product))}
+      </div>
+    </div>
+  );
 };
 
 export default ListProducts;

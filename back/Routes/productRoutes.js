@@ -8,11 +8,7 @@ router.get("/products", productController.getProduct);
 
 router.get("/product/:id", productController.getProductById);
 
-router.post(
-  "/product",
-  multerMid.single("image"),
-  productController.addProduct
-);
+router.post("/product", productController.addProduct);
 
 router.patch("/product/:id", productController.updateProduct);
 

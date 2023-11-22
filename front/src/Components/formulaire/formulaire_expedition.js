@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    nom: '',
-    prenom: '',
-    tel: '',
-    address: '',
-    postcode: '',
-    country: ''
+    nom: "",
+    prenom: "",
+    tel: "",
+    address: "",
+    postcode: "",
+    country: "",
   });
 
   return (
@@ -18,12 +18,16 @@ const Form = () => {
       <img className="img-fluid d-block mx-auto w-20" src={imagebrand} alt="Logo" />
     <div className="container-fluid">
       <div className="row">
-        <span id="details_exp" className="text-center">Entrez les détails d'expédition</span>
+        <span id="details_exp" className="text-center">
+          Entrez les détails d'expédition
+        </span>
       </div>
       <div className="row justify-content-center">
         <form className="" id="formulaire-expedition">
           <div className="mb-3">
-            <label htmlFor="nom" className="form-label">Nom de famille*</label>
+            <label htmlFor="nom" className="form-label">
+              Nom de famille*
+            </label>
             <input
               type="text"
               className="form-control inputs limited-width"
@@ -42,7 +46,9 @@ const Form = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="prenom" className="form-label">Prénom*</label>
+            <label htmlFor="prenom" className="form-label">
+              Prénom*
+            </label>
             <input
               type="text"
               className="form-control inputs limited-width"
@@ -61,11 +67,16 @@ const Form = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="tel" className="form-label">Numéro de téléphone*</label>
+            <label htmlFor="tel" className="form-label">
+              Numéro de téléphone*
+            </label>
             <div className="d-flex flex-row">
               <div className="input-group">
                 <div className="input-group-prepend">
-                  <select className="form-select" aria-label="Default select example">
+                  <select
+                    className="form-select"
+                    aria-label="Default select example"
+                  >
                     <option selected>+33</option>
                     <option value="1">+30</option>
                     <option value="2">+32</option>
@@ -92,20 +103,26 @@ const Form = () => {
             </div>
           </div>
           <div className="mb-3">
-            <label htmlFor="address" className="form-label">Adresse Postale*</label>
+            <label htmlFor="address" className="form-label">
+              Adresse Postale*
+            </label>
             <input
               type="text"
               className="form-control inputs limited-width"
               name="address"
               id="address"
               value={formData.address}
-              onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, address: e.target.value })
+              }
               placeholder="Entrez l'adresse postale"
               required
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="postcode" className="form-label">Code postal*</label>
+            <label htmlFor="postcode" className="form-label">
+              Code postal*
+            </label>
             <input
               type="number"
               className="form-control inputs limited-width"
@@ -123,7 +140,9 @@ const Form = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="country" className="form-label">Pays*</label>
+            <label htmlFor="country" className="form-label">
+              Pays*
+            </label>
             <input
               type="text"
               className="form-control inputs limited-width"
